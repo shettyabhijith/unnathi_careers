@@ -1,0 +1,429 @@
+* {
+  font-family: 'Crimson Text', serif;
+}
+
+  
+  p {
+      margin:0px;
+  }
+  
+  .row.row_edit {
+    margin: 0;
+    width: 100%;
+  }
+  
+  
+  
+  /* Header Starts Here */
+  
+  /* contact slide - marquee */
+  
+  .contact_slider {
+    background: #39396f;
+    color: white;
+  }
+  
+  .marquee_wrapper {
+    color: white;
+    font-weight: 600;
+  }
+  
+  .marquee_wrapper:hover {
+    color: black;
+  }
+  
+  .logout_tab_1 {text-align: right;margin-top: 10px;}
+  
+  a.logout_tab_a {
+      padding: 5px 30px;
+      background: grey;
+      color: white;
+      font-weight: 600;
+      border-radius: 10px;
+  }
+  
+  /* dropdown nav bar */
+  
+  
+  #menu, #menu ul {
+    margin: 15px;
+    padding: 0;
+    list-style: none;
+  }
+  
+  #menu:before,
+  #menu:after {
+    content: '';
+    display: table;
+  
+  }
+  
+  #menu:after {
+    clear: both;
+  }
+  
+  #menu li {
+    float: left;
+    position: relative;
+    
+  }
+  
+  
+  
+  
+  #menu a {
+    float: left;
+    padding: 12px 17px;
+    text-transform: uppercase;
+    font-family: Baloo;
+    text-decoration: none;
+    color: #39396f;
+    width: 100%;
+    font-weight: 600;
+    border-radius: 10px;
+    font-size: 15px;
+  }
+
+  #menu a:after {
+    display:block;
+  content: '';
+  border-bottom: solid 3px #019fb6;  
+  transform: scaleX(0);  
+  transition: transform 250ms ease-in-out;
+  }
+
+  #menu a:hover:after { transform: scaleX(1); }
+
+
+
+/*   
+  #menu li:hover> a {
+    color: white;
+    background: #39396f;
+  }
+   */
+
+  .dropdown_nav_aviations {
+    width: 100%;
+    white-space: nowrap;
+  }
+  
+  
+  #menu ul {
+    margin: 20px 0 0 0;
+    opacity: 0;
+    visibility: hidden;
+    position: absolute;
+    top: 48px;
+    left: 0px;
+    z-index: 2;
+    background:white;
+    border-radius: 7px;
+    transition: all .3s ease-in-out;
+    box-shadow: 0px 0px 2px 2px black;  
+  }
+  
+  #menu li:hover > ul {
+    opacity: 1;
+    visibility: visible;
+    margin: 0px;
+  }
+  
+  #menu ul ul {
+    top: 0px;
+    left: 160px; 
+  }
+  
+  #menu ul li{
+    
+    float: none;
+    display: block;
+    border: 0;
+   
+  }
+  
+  #menu ul li:last-child {
+    box-shadow: none;
+  }
+  
+  #menu ul a{
+    padding: 12px 30px;
+    display: block;
+    white-space: nowrap;
+    float: none;
+    border-radius: 7px;
+  }
+  
+  /* navbar tabs */
+  
+  
+  img.unnathi_img_logo1a {
+      width: 140px;
+      cursor: pointer;
+  }
+  
+  .unnathi_head_logo {
+      text-align: center;
+      margin-top: 10px;
+  }
+  
+  ul.nav_bar_head {padding: 0;margin: 0;display: flex;list-style: none;height: 100%;}
+  
+  li.nav_bar_li {
+      padding: 0px 30px;
+      /* line-height: 100%; */
+      height: 100%;
+      display: table;
+  }
+  
+  .home1 {
+      /* line-height: 50%; */
+      color: black;
+      font-size: 18px;
+      font-weight: 600;
+      display: table-cell;
+      vertical-align: middle;
+      /* font-family: serif; */
+      cursor: pointer;
+  }
+  
+  .home1:hover {
+    text-decoration: none;
+  }
+  
+  .nav_bar_box {
+      height: 100%;
+  }
+  
+  .nav_bar_dropdown {
+      height: 100%;
+      display: table;
+  }
+  
+  #logout_tab_head {
+    border-left: 3px solid grey;
+    margin-left: 10px;
+    padding-left: 10px;
+    list-style-type: none;
+    margin-top: 27px;
+  }
+  
+  #logout_tab_head a{
+    color: black;
+    padding: 10px ;
+    font-weight: 600;
+    text-decoration: none;
+  }
+  
+  #logout_tab_head a:hover {
+    background-color: black !important;
+    color: white !important;
+    border-radius: 10px;
+  }
+  
+  i.fa.fa-power-off.power_off {
+    font-size: 20px;
+    padding-left: 2px;
+  }
+  
+  .logout_div_box {
+    float: right;
+    /* width: 100%; */
+  }
+  
+
+  .nav_layout_box653 {
+    display: flex;
+}
+
+.side_mobile_dropbara {
+  text-align: right;
+  width: 100%;
+  display: none;
+}
+
+.logout_and_nav_bar_linea{
+display: block;
+}
+
+
+.side_mobile_dropbarb {
+    text-align: right;
+    width: 100%;
+    display: none;
+}
+
+.logout_and_nav_bar_lineb{
+  display: none;
+}
+
+.side_navi_icon {
+    margin-top: 32px;
+    padding: 5px;
+}
+
+.nav_bar_menu_navi_icon {
+  display: flex;
+}
+
+
+
+  
+  /* Header Ends Here */
+
+
+  /* Footer Starts Here */
+
+  .footer_box {
+    background: #32373a;
+    color: white;
+    padding-top: 50px;
+}
+
+p.footer_head_p {
+    font-weight: 600;
+    font-size: 20px;
+}
+
+.footer_box_head {
+    padding-left: 50px;
+}
+
+.footer_box_2 {
+    padding-left: 50px;
+    width: 50%;
+    margin: 0 auto;
+}
+
+ul.footer_quick_Links_all {
+    padding: 0;
+    list-style: none;
+}
+
+a.footer_quick_a {
+    color: white;
+    font-size: 17px;
+}
+
+/* Footer Ends Here */
+  
+
+
+
+
+
+  
+  
+/* Mobile Responsive Starts Here */
+
+
+@media (max-width:768px) {
+
+    #menu li {
+      display: block;
+      float: none;
+    }
+  
+    #menu ul {
+      top: 150px;
+      width: 100%;
+     
+    }
+  
+    #menu ul ul {
+      top: 50px;
+      left: 0px;
+    }
+
+    .footer_inside{
+      padding: 0px;
+      padding-top: 25px;
+
+    }
+
+    
+    .nav_layout_box653 {
+      display: flex;
+    }
+
+
+
+    .side_mobile_dropbara {
+
+      display: none;
+  }
+
+  .logout_and_nav_bar_linea{
+    display: none;
+  }
+
+    .side_mobile_dropbarb {
+      padding-left: 15px;
+        display: block;
+
+    }
+
+    .logout_and_nav_bar_lineb{
+      display: flex;
+      margin-top: 8px !important;
+      white-space: nowrap;
+
+      margin: 0 auto;
+    }
+
+    .flex_mobile {
+      display: flex;
+    }
+
+    .navigation_bar {
+      display: flex;
+  }
+
+    .logout_div_boxa {
+      display: none;
+  }
+
+    
+    .nav_bar_header12{
+      display: none;
+    }
+
+    .logout_div_box {
+
+      width: 100%;
+  }
+
+  i.fa.fa-power-off.power_off {
+    font-size: 17px;
+  }
+
+  #logout_tab_head{
+    margin-top: 10px;
+  }
+
+  .side_navi_icon{
+    margin-top: 5px;
+  }
+
+  .nav_bar_menu_navi_icon {
+    display: unset;
+    width: 100%;
+    z-index: 1;
+  }
+
+  #menu, #menu ul{
+    margin: 0;
+    white-space: nowrap;
+  }
+  
+  img.unnathi_img_logo1a{
+     width: 120px;
+
+  } 
+  
+  /*  .col_exp_9 {*/
+  /*   width: 57%;*/
+  /*   margin-top: 10px;*/
+  /*  }*/
+
+}

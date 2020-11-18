@@ -1,0 +1,1048 @@
+
+/* dream job banner */
+
+.find_dream_job {
+  text-align: center;
+  text-align: center;
+  padding: 10px 0px;
+  margin: 10px 0px;
+  box-shadow: inset 0 0 10px #ccc;
+}
+
+.dream_job_img {
+  cursor: pointer;
+  height: 100px !important;
+  min-width: 100% !important;
+}
+
+
+/* left - right box */
+
+.left_right_box {
+  display: flex;
+  height: 300px;
+  position: relative;
+  z-index: -1;
+
+}
+
+.left_right_box:after {
+  background: black;
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  content: "";
+  opacity: 0.3;
+}
+
+.right_box {
+  height: 100%;
+}
+
+img.left_img {
+  height: 100%;
+    object-fit: cover;
+    position: absolute;
+    width: 60%;
+}
+
+img.right_img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  position: absolute;
+  width: 58%;
+  right: 0;
+  clip-path: polygon(0px 0, 100% 0, 100% 100%, 180px 100%);
+}
+
+
+
+/* left right 2 */
+
+.home_main_img_box{
+  background-image: url(../images/home_img1a.png);
+  height: 450px;
+  background-size: cover;
+  background-position: 50% 17%;
+  position: relative;
+}
+
+
+/* who we are flip */
+
+.box_who_we_layout {
+  width: 60%;
+  margin: 0 auto;
+  position: absolute;
+  top: 56%;
+  left: 50%;
+  transform: translatex(-50%);
+  height: 50%;
+}
+
+.layout_who_we{
+  height: 100%;
+}
+
+
+
+
+
+
+i.fa.fa-id-card-o.abc {font-size: 35px;margin-top: 50px;}
+
+i.fa.fa-link.abc {font-size: 35px;margin-top: 50px;}
+
+i.fa.fa-clock-o.abc {font-size: 35px;margin-top: 50px;}
+
+i.fa.fa-envelope-open.abc {font-size: 35px;margin-top: 50px;}
+
+.flip_box_design1 {
+    text-align: center;
+    background: grey;
+    color: white;
+    height: fit-content;
+    width: 100%;
+}
+
+.flip_box_design2 {
+  text-align: center;
+
+    color: white;
+    height: fit-content;
+    width: 100%;
+}
+
+p.flip_box_design_exp1 {
+    font-size: 25px;
+    font-weight: 600;
+    padding: 20px 20px 70px;
+    /* margin-bottom: 50px; */
+}
+
+
+
+#flip_container1, #flip_container3, #flip_container3 {
+  position: relative;
+
+  z-index: 1;
+}
+
+#flip_container1 {
+  perspective: 1000;
+}
+#flip_card1 {
+  width: 100%;
+  height: fit-content;
+  transform-style: preserve-3d;
+  transition: all 1.0s linear;
+  
+}
+#flip_container1:hover #flip_card1 {
+  transform: rotateY(180deg);
+}
+
+#flip_card2 {
+  width: 100%;
+  height: fit-content;
+  transform-style: preserve-3d;
+  transition: all 1.0s linear;
+}
+#flip_container2:hover #flip_card2 {
+  transform: rotateY(180deg);
+}
+
+#flip_card3 {
+  width: 100%;
+  height: fit-content;
+  transform-style: preserve-3d;
+  transition: all 1.0s linear;
+}
+#flip_container3:hover #flip_card3 {
+  transform: rotateY(180deg);
+ 
+}
+
+.face {
+  position: absolute;
+  width: 100%;
+  height: fit-content;
+  backface-visibility: hidden;
+  
+}
+.face.back {
+  display: block;
+  transform: rotateY(180deg);
+  color: white;
+  text-align: center;
+  height: fit-content;
+  padding: 20px;
+  background: gray;
+  color: white;
+} 
+
+
+
+
+
+/* business partners box  */
+
+.business_partner_box {
+  background-color: white;
+  padding: 5px 100px;
+  padding-bottom: 0px;
+  text-align: center;
+
+}
+
+.business_partner_slide {
+  display: flex;
+}
+
+.business_partner_head {
+  font-size: 37px;
+  font-weight: 600;
+  margin-bottom: 27px;
+  color: #39396f;
+}
+
+.business_partner_edit{
+  border-bottom: 3px solid;
+}
+
+img.ayata_logo_img {
+  height: 65px;
+    width: 41% !important;
+    margin: 0 auto;
+}
+
+.ibm_1_all {
+  padding: 0px 20px;
+}
+
+img.ibm_img {
+  border-radius: 15px;
+  width: 47% !important;
+  margin: 0 auto;
+}
+
+img.srininvas_logo_img {
+  background: #270094;
+  padding: 11px;
+  border-radius: 15px;
+  width: 44% !important;
+  margin: 0 auto;
+}
+
+
+/* Who we are 5 */
+.flip_card_5{
+  background-color: transparent;
+  width: 250px;
+  height: 250px;
+  perspective: 1000px;
+  padding: 10px;
+}
+
+.flip_card_5_inner{
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.6s;
+  transform-style: preserve-3d;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+}
+
+.flip_card_5:hover .flip_card_5_inner {
+  transform: rotateY(180deg);
+}
+
+.flip_card_5_front, .flip_card_5_back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  display: table;
+}
+
+.flip_card_5_front {
+  background-color: #bbb;
+  color: black;
+}
+
+.flip_card_5_back {
+  background-color: #2980b9;
+  color: white;
+  transform: rotateY(180deg);
+}
+
+
+.flip_box_layout {
+  display: flex;
+}
+
+.who_we_flip_box {
+  position: absolute;
+  bottom: -28%;
+  left: 50%;
+  transform: translatex(-50%);
+}
+
+.who_we_qsn{
+  font-size: 26px;
+  display: table-cell;
+  vertical-align: middle;
+  
+}
+
+.who_we_explained {
+  display: table-cell;
+  vertical-align: middle;
+  padding: 33px;
+  
+}
+
+
+/* business partners 2 */
+
+
+.img_box_business_2ab {
+  width: 50%;
+}
+
+.business_image_2a_layout {
+  box-shadow: 6px 6px 9px grey;
+}
+
+.business_row1 {
+  margin-bottom: 40px;
+}
+
+.business_img_2a_1 {
+  max-height: 92px;
+}
+
+.srinivas_logo2{
+  background-color: blue;
+  padding: 10px;
+  border-radius: 10px;
+}
+
+.business_img_2a_back {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 100%;
+  transform: translate(-50%, -50%);
+  visibility: hidden;
+  opacity: 0;
+  box-shadow: 0px 0px 9px 3px gainsboro;
+  border-radius: 5px;
+  padding: 10px;
+  transition: transform 0.9s;
+  background: white;
+  z-index: 9;
+  /* transition-delay: 0.1s; */
+}
+
+
+.business_part_2a {
+  position: relative;
+  width: 60%;
+  margin: 0 auto;
+}
+
+.business_part_2a:hover {
+  visibility: hidden;
+  
+}
+
+.business_part_2a:hover .business_img_2a_back{
+  visibility: visible;
+  transform: translate(-50%, -50%);
+  opacity: 1;
+  
+}
+
+
+/* learn about our program starts here */
+
+.our_progran_box {
+  padding: 50px;
+  text-align: center;
+  background: #020f64;
+  margin: 50px;
+  box-shadow: 0px 0px 6px 5px #020f64;
+}
+
+p.our_program_h1 {
+  width: fit-content;
+  margin: 0 auto;
+  color: white;
+  font-size: 35px;
+  border-bottom: 1px solid;
+  padding: 0px 10px;
+}
+
+a.our_program_button {
+  /* width: fit-content; */
+  /* margin-top: 30px; */
+  padding: 20px 30px;
+  color: white;
+  border: 1px solid white;
+  text-decoration: none;
+  
+  background: linear-gradient(to right, white 50%, transparent 50%);
+  background-size: 200% 100%;
+  background-position: right bottom;
+  transition: all .5s ease-out;
+}
+
+a.our_program_button:hover {
+  background-position: left bottom;
+  color:#020f64;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+
+
+.our_program_exp {
+  margin-top: 40px;
+}
+
+/* learn about our program ends here */
+/* who we are  */
+
+.who_we_are_box {
+  padding: 50px 100px;
+}
+
+.who_we_are_head {
+  font-size: 37px;
+  font-weight: 600;
+  letter-spacing: 1px;
+  padding: 0px 20px;
+}
+
+span.who_w {
+  border-bottom: 4px solid #39396f;
+  padding-bottom: 3px;
+}
+
+.who_we_detail {
+  font-size: 18px;
+  padding: 10px 20px;
+  text-align: justify;
+}
+
+.who_we_are_box {
+  color: #39396f;
+  background-color: gainsboro;
+}
+
+.who_we_video {
+  box-shadow: 0px 0px 13px 8px white;
+    /* height: 100%; */
+    border-radius: 20px;
+    margin-top: 44px;
+}
+
+iframe.who_we_video1a {
+  width: 100%;
+  height: 100%;
+  border-radius: 24px;
+}
+
+
+/* top 10 company */
+
+
+
+/* .top_10_company {
+  padding: 0px 0px;
+    background-image: url(../images/top_10bg4.jpg);
+    background-size: cover;
+    position: relative;
+} */
+
+.top_10_company{
+  background-color: gainsboro;
+  padding-bottom: 20px;
+}
+
+.top_10_all{
+  padding-top: 20px;
+
+}
+
+/* .top_10_company::before {
+  position: absolute;
+    top: 0px;
+    left: 0px;
+    height: 100%;
+    width: 100%;
+    background: linear-gradient(45deg, gainsboro, transparent);
+    content: "";
+    opacity: 0.5;
+} */
+
+.top_10_img_cover {
+  height: 149px;
+    width: 129px;
+    /* overflow: hidden; */
+    margin: 0 auto;
+    position: relative;
+    padding: 50px;
+    background: white;
+    border-radius: 5px;
+    z-index: 5;
+    box-shadow: 1px 3px 10px;
+}
+
+img.top_10_img_slide {
+  /* height: 99px; */
+  width: 80px !important;
+  margin: 0 auto;
+}
+
+p.top_10_logo_name {
+  padding: 7px 9px;
+  font-size: 17px;
+  font-weight: 600;
+  margin-top: 5px;
+  /* border-top: 1px solid; */
+}
+
+.ggg {
+  padding-bottom: 10px;
+}
+
+.top_10_layout_with_exp {
+  width: 100%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+}
+
+p.top_10_headset {
+  margin: 0px 10px;
+  /* width: fit-content; */
+  padding: 2px 30px;
+  background: #ffffff;
+  border-radius: 5px;
+  box-shadow: 3px 4px 7px black;
+  margin-bottom: 20px;
+  font-family: -webkit-body;
+  color: #39396f;
+  white-space: nowrap;
+}
+
+/* img.top_10_img_slide {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  width: 100px !important;
+} */
+
+.top_10_head {
+  text-align: center;
+    font-size: 35px;
+    font-weight: 600;
+    padding-bottom: 20px;
+
+}
+
+/* span.top_10_top {
+  border-bottom: 3px solid;
+  border-color: #39396f;
+  padding-bottom: 5px;
+} */
+
+span.top_10_companies_last {
+  color: #39396f;
+}
+
+
+/* Our certificates  */
+
+img.our_cert_image1a {
+  height: 350px;
+  padding: 20px;
+}
+
+img.our_cert_image1ab {
+  width: 100%;
+}
+
+
+.our_certification_box {
+  background: white;
+}
+
+p.our_cert_1a {
+  font-size: 35px;
+  font-weight: 600;
+  letter-spacing: 1px;
+  color: #39396f;
+}
+
+span.our_cert_1b {
+  border-bottom: 3px solid #39396f;
+}
+
+span.our_cert_1c {
+  color: #39396f;
+}
+
+.our_certification_head {
+  padding-top: 10px;
+  text-align: center;
+}
+
+.our_cert_both_img {
+  display: flex;
+  width: 550px;
+  margin: 0 auto;
+}
+
+.our_cert_img1 {
+  text-align: center;
+}
+
+span.close_icon_modal_cert {
+  padding: 0px 10px;
+  background: #040000;
+  color: white;
+  border-radius: 5px;
+}
+
+.cert_box_container {
+ 
+  width: 40%;
+  text-align: center;
+}
+
+.certificate_groups_2 {
+  display: flex;
+}
+
+.our_cert_img_box {
+  margin: 0 auto;
+}
+
+  /* .our_cert_img1 {
+    position: relative;
+  }
+
+  .our_cert_img1:hover::after {
+    background: red;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    height: 100%;
+    width: 100%;
+    opacity: 0.4;
+  }
+
+  #cert_effect {
+    position: relative;
+  
+  }
+
+  #cert_effect:hover::after
+  {
+      position:absolute;
+      top: 0px;
+      left:0px;
+      bottom:0;
+      height: 100%;
+      width: 100%;
+      background-color: red;
+      content: "";
+      opacity: 0.5;
+    
+  } */
+
+
+
+
+
+
+
+
+
+
+/* testimonials */
+
+
+
+/* img.testim_students_li {
+  border-radius: 15px;
+  width: 80% !important;
+  margin: 0 auto;
+
+} */
+
+.testimonial_head {
+  text-align: center;
+  font-size: 40px;
+  font-weight: 600;
+  letter-spacing: 1px;
+  background: white;
+    color: #4141ff;
+}
+
+
+.testimonial_box {
+  margin-top: 20px ;
+}
+
+.testim_12_img_layout {
+  width: 50%;
+  height: 100%;
+  position: relative;
+}
+
+.testim_12_exp {
+  width: 50%;
+  /* float: right; */
+  margin-left: -10px;
+  margin-top: 70px;
+  z-index: -1;
+  background: #0b1129;
+  color: white;
+  padding: 20px 20px 10px 40px;
+  font-size: 22px;
+  font-weight: 600px;
+  margin-bottom: -70px;
+  position: relative;
+}
+
+p.testim_name {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100%;
+  /* margin: 0 auto; */
+  text-align: center;
+  background: #4141ff;
+  margin: 0;
+  padding: 5px;
+}
+
+.testim_layout_12 {
+  display: flex;
+  padding: 30px;
+}
+
+/* .testim_12_img_layout::before {
+  position: absolute;
+  top: 0;
+  left: 0;
+  content: "";
+  background: #0000ff79;
+  height: 100%;
+  width: 100%;
+  opacity: 1;
+} */
+
+.testim_box_12 {
+  padding-bottom: 50px;
+}
+
+span.testim_head_span {
+  border-bottom: 3px solid;
+  border-color: black;
+}
+
+/* reach out us starts */
+
+.reach_out_us_headeer {
+  text-align: center;
+  margin-top: 30px;
+  padding-top: 30px;
+}
+
+p.reach_out_us_exp {
+  padding: 10px 30px;
+  background: white;
+  box-shadow: 0px 0px 7px 1px;
+  width: fit-content;
+  margin: 0 auto;
+  border-radius: 5px;
+  font-size: 22px;
+  font-weight: 600;
+}
+
+.reach_us_tabs {
+  display: flex;
+  text-align: center;
+  width: 100%;
+  margin: 0 auto;
+  padding: 20px 100px;
+}
+
+.reach_udpi_tab {
+  width: 34%;
+}
+
+button.btn.udupi_btn {
+  box-shadow: 0px 0px 10px 2px;
+  width: 50%;
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.reach_all_cmn {
+  margin: 50px 100px;
+  border-radius: 10px;
+  box-shadow: 0px 0px 7px 1px;
+}
+
+.reach_adress_box1 {
+  padding: 30px 60px;
+  
+}
+
+.reach_adress_1 {
+  display: flex;
+  margin-bottom: 35px;
+}
+
+p.address_line1 {
+  margin-bottom: 0px;
+  font-size: 18px;
+}
+
+i.fa.fa-map-marker.reach {
+  font-size: 30px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+}
+
+.reach_address_icon {
+  margin-right: 20px;
+  width: 69px;
+  height: 69px;
+  border-radius: 50%;
+  background: grey;
+  position: relative;
+}
+
+i.fa.fa-phone.reach {
+  font-size: 30px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+}
+
+
+i.fa.fa-envelope-o.reach {
+  font-size: 30px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+}
+
+.reach_phone_icon {
+  margin-right: 20px;
+  width: 69px;
+  height: 69px;
+  border-radius: 50%;
+  background: grey;
+  position: relative;
+}
+
+.reach_email_icon {
+  margin-right: 20px;
+  width: 69px;
+  height: 69px;
+  border-radius: 50%;
+  background: grey;
+  position: relative;
+}
+
+.reach_phone_box {
+  display: flex;
+  margin-bottom: 74px;
+}
+
+.reach_email_box {
+  display: flex;
+}
+
+.reach_phone_exp {display: grid;}
+
+.reach_email_exp {
+  margin-top: 21px;
+  /* display: table; */
+  /* height: 100%; */
+}
+
+a.reach_email_number {
+  color: black;
+  text-decoration: none;
+  /* vertical-align: middle; */
+}
+
+a.reach_phone_number {
+  color: black;
+  text-decoration: none;
+}
+
+#contact_nuber_mlore{
+  margin-top: 21px;
+}
+
+.map_udupi {
+  height: 100%;
+  width: 100%;
+  text-align: center;
+  /* box-shadow: 0px 0px 5px 5px white; */
+  /* border-radius: 25px; */
+  padding: 30px;
+}
+
+
+iframe.map_bangalore_in {
+  /* border-radius: 4px; */
+  width: 100%;
+  height: 100%;
+  box-shadow: 0px 0px 7px 2px grey;
+}
+
+
+#bengaluru_id_box, #mangalore_id_box{
+  display: none;
+  
+}
+
+/* reach out us ends */
+
+/* Find the careers you deserve */
+
+.find_career_box {
+  text-align: center;
+  padding: 10px;
+  background: #39396f;
+}
+
+
+
+img.find_career_img {
+  border-radius: 20px;
+  box-shadow: 0px 0px 2px 4px grey;
+  cursor: pointer;
+  width: 25%;
+}
+
+img.find_career_img:hover, img.find_career_img:focus {
+  transform: scale(1.2);
+  transition-duration: 1s;
+}
+
+
+.candidate_on_img {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 999;
+}
+
+.login_form_layout {
+  position: fixed;
+  top: 50%;
+  left: 70%;
+  transform: translate(-50%, -50%);
+  z-index: 999;
+}
+
+/* Mobile Responsive Starts Here */
+
+@media (max-width:1000px) {
+  img.ayata_logo_img{
+    height: 100% !important;
+  }
+}
+
+@media (max-width:768px) {
+
+  label.left_right_labels1 {
+    width: 115px;
+  }
+
+  .candidate_on_img {
+    top: 50%;
+    left: 50%;
+    width: 350px;
+  }
+
+  .candidate_form_box_3a{
+    left: 50%;
+  }
+
+  .business_partner_box {
+    padding: 0px;
+  }
+
+  .who_we_are_box {
+    padding: 0px;
+  }
+
+  .top_10_company {
+    padding: 0px;
+    padding-top: 15px;
+  }
+
+  img.find_career_img{
+    width: 70%;
+  }
+
+  img.our_cert_image1a {
+    height: 220px;
+  }
+
+  img.right_img {
+    width: 70%;
+    clip-path: polygon(0px 0, 100% 0, 100% 100%, 100px 100%);
+  }
+
+  .our_cert_both_img {
+    width: auto;
+    display: block;
+  }
+
+  .our_certification_box{
+    padding: 0px;
+  }
+
+  .dream_job_img{
+    height: unset !important;
+  }
+
+  /* img.testim_students_li{
+    width: 50% !important;
+  } */
+ 
+}
+
+/* Mobile Responsive Ends Here */
+
+
